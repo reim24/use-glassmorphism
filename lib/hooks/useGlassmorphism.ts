@@ -6,6 +6,11 @@ export type GlassOptions = {
   blur?: number
   transparency?: number,
 }
+/**
+ * A React hook for applying glassmorphism effects to elements.
+ * @param {GlassmorphismOptions} options - The options to configure the glassmorphism effect.
+ * @returns {React.RefObject<T>} - The ref object to be assigned to the target element.
+ */
 export const useGlassmorphism = (
   options: GlassOptions = { color: 'rgb(255,255,255)', blur: 5 }
 ) => {
