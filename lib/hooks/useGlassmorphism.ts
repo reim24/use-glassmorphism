@@ -1,16 +1,17 @@
-import { MutableRefObject, useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { parseColor } from "../utils/colorUtility";
 
 export type GlassOptions = {
-  color: string
-  blur: number
+  color?: string
+  blur?: number
   transparency?: number,
 }
 export const useGlassmorphism = (
-  elementRef: MutableRefObject<HTMLElement | null>,
   options: GlassOptions = { color: 'rgb(255,255,255)', blur: 5 }
 ) => {
   const { r, g, b, a } = parseColor(options.color);
+  const elementRef = useRef(null)
+
   useEffect(() => {
     const element = elementRef.current
     if (element) {
@@ -19,4 +20,6 @@ export const useGlassmorphism = (
       element.style.backdropFilter = `blur(${options.blur}px)`;
     }
   }, [elementRef, options])
+
+  return elementRef;
 };
