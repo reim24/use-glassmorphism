@@ -3,13 +3,13 @@
 ## Installation
 
 ```bash
-npm install use-glassmorphism
+npm install react-glassmorphism
 ```
 
 ### or
 
 ```bash
-yarn add use-glassmorphism
+yarn add react-glassmorphism
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ import { useGlassmorphism, GlassOptions } from 'use-glassmorphism';
 
 const MyComponent = () => {
   const glassRef = useGlassmorphism<HTMLDivElement>({
-    color: 'rgba(255, 255, 255, 0.8)',
+    color: 'rgba(255, 255, 255)',
     blur: 10,
     transparency: 0.5,
     animation: {
