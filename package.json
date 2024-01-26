@@ -1,18 +1,23 @@
 {
-  "name": "react-glassmorphism",
-  "version": "0.0.1",
+  "name": "use-glassmorphism",
+  "version": "1.0.1",
   "description": "",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/react-glassmorphism.js",
+  "main": "./dist/use-glassmorphism.js",
   "types": "dist/index.d.ts",
   "keywords": [
     "react",
     "glassmorphism"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reim24/react-glassmorphism.git"
+  },
   "scripts": {
+    "demo": "vite",
     "build": "tsc && vite build"
   },
   "author": "reim",
@@ -20,7 +25,10 @@
   "devDependencies": {
     "@types/node": "^20.11.6",
     "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.3.3",
     "vite": "^5.0.12",
     "vite-plugin-dts": "^3.7.2"
