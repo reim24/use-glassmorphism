@@ -9,7 +9,7 @@ import { GlassOptions } from "../types";
  * @returns {React.RefObject<T>} - The ref object to be assigned to the target element.
  */
 export const useGlassmorphism = <T extends HTMLElement>(
-  options: GlassOptions
+  options: GlassOptions = {}
 ): React.RefObject<T> => {
   const {
     color = "rgb(255,255,255)",
