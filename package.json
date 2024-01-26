@@ -1,6 +1,6 @@
 {
   "name": "use-glassmorphism",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "type": "module",
   "files": [
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/reim24/react-glassmorphism.git"
+    "url": "https://github.com/reim24/use-glassmorphism.git"
   },
   "scripts": {
     "demo": "vite",
