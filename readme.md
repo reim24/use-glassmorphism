@@ -16,7 +16,7 @@ yarn add react-glassmorphism
 
 ```
 import React from 'react';
-import { useGlassmorphism, GlassOptions } from 'use-glassmorphism';
+import { useGlassmorphism } from 'use-glassmorphism';
 
 const MyComponent = () => {
   const glassRef = useGlassmorphism<HTMLDivElement>({
