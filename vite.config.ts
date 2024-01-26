@@ -14,6 +14,6 @@ export default defineConfig({
     },
   },
   plugins: [
-    dts({ include: ["lib"] })
+    dts({ include: ["lib"], exclude: ["lib/utils"] })
   ]
 });
