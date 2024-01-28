@@ -14,8 +14,15 @@ export type GlassOptions = {
 
   /**
    * The transparency level for the glassmorphic effect. Should be in the range 0 to 1.
+   * @default 0.2
    */
   transparency?: number;
+
+  /**
+   * The outline strength for the glassmorphic effect. Should be in the range 0 to 1.
+   * @default 0
+   */
+  outline?: number;
   /**
    * Animation properties for the glassmorphic effect.
    */
@@ -30,7 +37,7 @@ export type GlassOptions = {
      * The timing function for the animation.
      * @default "ease"
      */
-    timingFunction?: "linear" | "ease" | "ease-in" | "ease-out" | "ease-in-out";
+    timingFunction?: 'linear' | 'ease' | 'ease-in' | 'ease-out' | 'ease-in-out';
 
     /**
      * The delay in seconds before the animation starts.
