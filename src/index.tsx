@@ -8,7 +8,7 @@ const Demo = () => {
     animation: {
       duration: 0.5,
       timingFunction: 'ease-in-out',
-      delay: 0.1,
+      delay: 0.2,
     },
     outline: 0.5,
   });
