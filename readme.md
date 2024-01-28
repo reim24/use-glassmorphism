@@ -23,6 +23,7 @@ const MyComponent = () => {
     color: 'rgba(255, 255, 255)',
     blur: 10,
     transparency: 0.5,
+    outline: 0.5,
     animation: {
       duration: 0.5,
       timingFunction: 'ease-in-out',
@@ -43,6 +44,7 @@ const MyComponent = () => {
 - **color**: The color for the glassmorphic effect. Accepts RGB, RGBA, or hex values.
 - **blur**: The blur strength for the glassmorphic effect. Should be in the range 0 to 20. Default is 5.
 - **transparency**: The transparency level for the glassmorphic effect. Should be in the range 0 to 1.
+- **outline**: The oultine level for the glassmorphic effect. Should be in the range 0 to 1.
 - **animation**: Animation properties for the glassmorphic effect.
   - **duration**: The duration of the animation. Default is 0.3 seconds.
   - **timingFunction**: The timing function for the animation. Default is 'ease'.
