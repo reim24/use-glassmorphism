@@ -1,15 +1,15 @@
-# react-glassmorphism
+# use-glassmorphism
 
 ## Installation
 
 ```bash
-npm install react-glassmorphism
+npm install use-glassmorphism
 ```
 
 ### or
 
 ```bash
-yarn add react-glassmorphism
+yarn add use-glassmorphism
 ```
 
 ## Usage
