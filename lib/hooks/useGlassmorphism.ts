@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useRef } from 'react';
-import { parseColor } from '../utils/colorUtility';
-import { GlassOptions } from '../types';
+import { useEffect, useMemo, useRef } from "react";
+import { parseColor } from "../utils/colorUtility";
+import { GlassOptions } from "../types";
 
 /**
  * A React hook for applying glassmorphism effects to elements.
@@ -12,7 +12,7 @@ export const useGlassmorphism = <T extends HTMLElement>(
   options: GlassOptions = {}
 ): React.RefObject<T> => {
   const {
-    color = 'rgb(255,255,255)',
+    color = "rgb(255,255,255)",
     blur = 5,
     transparency,
     outline = 0,
@@ -31,7 +31,7 @@ export const useGlassmorphism = <T extends HTMLElement>(
       if (animation) {
         const {
           duration = 0.3,
-          timingFunction = 'ease',
+          timingFunction = "ease",
           delay = 0,
         } = animation;
 
@@ -44,11 +44,11 @@ export const useGlassmorphism = <T extends HTMLElement>(
 
     setTimeout(() => {
       element.style.background = `rgba(${r}, ${g}, ${b}, ${transparency ?? a})`;
-      element.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.1)';
+      element.style.boxShadow = "0 4px 30px rgba(0, 0, 0, 0.1)";
       element.style.backdropFilter = `blur(${blur}px)`;
       element.style.border = `1px solid rgba(${r}, ${g}, ${b}, ${outline})`;
     }, 1);
-  }, [elementRef, color, blur, transparency, outline, animation]);
+  }, [elementRef, options]);
 
   return elementRef;
 };

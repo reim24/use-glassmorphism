@@ -23,6 +23,7 @@ export type GlassOptions = {
    * @default 0
    */
   outline?: number;
+
   /**
    * Animation properties for the glassmorphic effect.
    */
@@ -37,7 +38,7 @@ export type GlassOptions = {
      * The timing function for the animation.
      * @default "ease"
      */
-    timingFunction?: 'linear' | 'ease' | 'ease-in' | 'ease-out' | 'ease-in-out';
+    timingFunction?: "linear" | "ease" | "ease-in" | "ease-out" | "ease-in-out";
 
     /**
      * The delay in seconds before the animation starts.
